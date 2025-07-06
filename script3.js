@@ -25,15 +25,15 @@ async function checkWheather(city) {
 
     console.log(data.weather[0].main);
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "clouds.png";
+      weatherIcon.src = "assets/clouds.png";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "clear.png";
+      weatherIcon.src = "assets/clear.png";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "rain.png";
+      weatherIcon.src = "assets/rain.png";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "drizzle.png";
+      weatherIcon.src = "assets/drizzle.png";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "mist.png";
+      weatherIcon.src = "assets/mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
